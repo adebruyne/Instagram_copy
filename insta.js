@@ -24,6 +24,7 @@ myImgs[i].addEventListener("click", function(evt) {
         img.style.width = "600px";
         img.style.height = "600px";
         img.style.marginTop = "52px";
+        img.style.backgroundColor = ""
      
 
     //adding image to overlay
@@ -36,5 +37,10 @@ myImgs[i].addEventListener("click", function(evt) {
             myOverlay.parentNode.removeChild(myOverlay);
         }
     })
+
+
 });
+
+
 }
+

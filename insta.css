@@ -1,7 +1,11 @@
 html, body{
     width:100%;
     height: 100%;
+    
 }
+/* *{ margin: 0;
+padding: 0;
+box-sizing: border-box;} */
 
 /* Nav Bar styling */
 nav  {
@@ -21,6 +25,11 @@ nav a{
     font-size: 15px;
     /* border: 1px solid #000; */
 }
+
+
+
+
+
 
 .logo{
     padding-left: 20px;
@@ -56,23 +65,22 @@ nav a{
    
    
 }
-/* .overlay{
-    background-color: #000;
-    opacity: .7;
-    filter: alpha(opactiy=70);
-    position: absolute; 
-    top: 0; 
-    left: 0;
-    width: 100%; 
-    height: 100%;
-    z-index: 10;
-    display: flex;
+
+.grow {
+     transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
-.hidden{
-    opacity: 0;
-    z-index: -1;
-} */
+.grow:hover {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform:scale(0.9);
+    border-radius: 10%;
+    cursor: pointer;
+   
+}
+
 
 @media screen and (min-width:480px){
     img {
